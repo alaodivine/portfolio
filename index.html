@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Divine | Web Developer & AI Student</title>
+  <meta name="description" content="Portfolio of Divine, an AI student and web developer. HTML, CSS, Bootstrap, JavaScript, Python and Figma.">
+
+  <!-- Fonts: Fraunces for headings, DM Sans for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap gives us the grid, navbar and buttons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Our own styles (colors, fonts, card look) -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-md sticky-top site-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#top">Divine<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-md-center gap-md-3">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="btn btn-accent btn-sm px-3" href="#contact">Hire me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <p class="eyebrow">Hi, I'm Divine 👋</p>
+          <h1>I build websites that work, and I'm learning to make them smart.</h1>
+          <p class="lead-text">AI student and web builder. I turn ideas into real pages with HTML, CSS, Bootstrap and JavaScript, and I'm growing into Python and AI.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#work" class="btn btn-accent btn-lg">See my work</a>
+            <a href="#contact" class="btn btn-outline-ink btn-lg">Let's talk</a>
+          </div>
+        </div>
+
+        <!-- Decorative "browser window" made with pure CSS -->
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="browser">
+            <div class="browser-bar"><span></span><span></span><span></span></div>
+            <div class="browser-body">
+              <div class="line w-50"></div>
+              <div class="line w-75 thick"></div>
+              <div class="line w-100"></div>
+              <div class="line w-75"></div>
+              <div class="pill-row"><div class="pill accent"></div><div class="pill"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="section-title">A little about me</h2>
+            <p class="about-text">I'm a Level 2 student at SQI College of ICT, teaching myself to build for the web one project at a time. My big goal is artificial intelligence, and every site I build sharpens the skills I'll need for it.</p>
+            <p class="about-text">I love taking a page I admire and rebuilding it from scratch to see how it really works, learning as I go along the way. Then I push further, like turning a whole Windows 11 desktop into a working website.</p>
+            <p class="about-text">I'm open to freelance and remote work, and I'm still growing fast.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-tint" id="work">
+      <div class="container">
+        <h2 class="section-title">Things I've built</h2>
+        <p class="section-sub">Every one is a real page I built, some solo and some with guidance along the way. Tap through to see them live.</p>
+
+        <div class="row g-4">
+
+          <!-- Project 1: Windows 11 Portfolio OS (featured) -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card">
+              <div class="project-thumb thumb-win"><span>Win 11</span></div>
+              <div class="project-body">
+                <h3>Windows 11 Portfolio OS <span class="badge-star">Featured</span></h3>
+                <p>A working Windows 11 desktop in your browser, with a lock screen, app windows and a My Projects folder. Powered by JavaScript. Click around, it's alive.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span></div>
+                <div class="project-links">
+                  <a href="https://windows11-portfolio-lemon.vercel.app/" target="_blank" rel="noopener" class="btn btn-accent btn-sm">Live demo</a>
+                  <a href="https://github.com/alaodivine/windows11-portfolio" target="_blank" rel="noopener" class="btn btn-outline-ink btn-sm">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 2: MTN clone (has a live link) -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card">
+              <!-- To use a screenshot instead, replace this div with: <img src="images/mtn.png" alt="MTN clone screenshot" class="project-img"> -->
+              <div class="project-thumb thumb-yellow"><span>MTN</span></div>
+              <div class="project-body">
+                <h3>MTN Data Plans Page</h3>
+                <p>A clone of a data plans page, built to practice clean layout and matching a real design closely.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span></div>
+                <div class="project-links">
+                  <a href="https://mtn-clone-gamma.vercel.app" target="_blank" rel="noopener" class="btn btn-accent btn-sm">Live demo</a>
+                  <a href="https://github.com/alaodivine/mtn-clone" target="_blank" rel="noopener" class="btn btn-outline-ink btn-sm">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 3: Jumia clone (has a live link) -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card">
+              <div class="project-thumb thumb-blue"><span>Jumia</span></div>
+              <div class="project-body">
+                <h3>Jumia Store Clone</h3>
+                <p>A full e-commerce homepage clone with a sidebar menu, banners and product sections, built to practice real-world layout and structure.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span></div>
+                <div class="project-links">
+                  <a href="https://jumia-clone-virid.vercel.app/" target="_blank" rel="noopener" class="btn btn-accent btn-sm">Live demo</a>
+                  <a href="https://github.com/alaodivine/jumia-clone" target="_blank" rel="noopener" class="btn btn-outline-ink btn-sm">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 3b: Two-Way Road Scene (has a live link) -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card">
+              <div class="project-thumb thumb-road"><span>🚗</span></div>
+              <div class="project-body">
+                <h3>Two-Way Road Scene</h3>
+                <p>An animated road scene with cars driving in both directions and pedestrians walking along the sidewalks, built with CSS animation.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span></div>
+                <div class="project-links">
+                  <a href="https://road-scene.vercel.app/" target="_blank" rel="noopener" class="btn btn-accent btn-sm">Live demo</a>
+                  <a href="https://github.com/alaodivine/road-scene" target="_blank" rel="noopener" class="btn btn-outline-ink btn-sm">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 4: Printivo clone (has a live link on GitHub Pages) -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card">
+              <div class="project-thumb thumb-pink"><span>Print</span></div>
+              <div class="project-body">
+                <h3>Printivo Print Shop</h3>
+                <p>An online print shop layout showing product categories like brochures, stickers, cards and tees. Great practice for grids and image-heavy pages.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span></div>
+                <div class="project-links">
+                  <a href="https://alaodivine.github.io/Printivo-clone/" target="_blank" rel="noopener" class="btn btn-accent btn-sm">Live demo</a>
+                  <a href="https://github.com/alaodivine/Printivo-clone" target="_blank" rel="noopener" class="btn btn-outline-ink btn-sm">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Project 5: Vyra (in progress, no links yet) -->
+          <div class="col-md-6 col-lg-4">
+            <article class="project-card">
+              <div class="project-thumb thumb-ink"><span>Vyra</span></div>
+              <div class="project-body">
+                <h3>Vyra <span class="badge-wip">In progress</span></h3>
+                <p>A website for working with voices. Change the accent and gender of a recording, with more AI voice tools on the way, like live translation.</p>
+                <div class="tags"><span>Python</span><span>AI</span><span>Web</span></div>
+                <div class="project-links">
+                  <span class="soon">Coming soon</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">What I work with</h2>
+        <div class="skills">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">Bootstrap</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Figma</span>
+          <span class="skill">Python <em>(learning)</em></span>
+          <span class="skill">Git &amp; GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container text-center">
+        <h2 class="section-title light">Got a project in mind?</h2>
+        <p class="contact-sub">I'm available for freelance and remote work. Say hello and let's build something good.</p>
+
+        <a href="mailto:alaodivine7@gmail.com" class="btn btn-accent btn-lg mt-2">alaodivine7@gmail.com</a>
+
+        <div class="social mt-4">
+          <a href="https://github.com/alaodivine" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/divine-alao-18294b415/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container text-center">
+      <small>&copy; 2026 Divine. Built with HTML, CSS and Bootstrap.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap's JavaScript makes the mobile menu open and close -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
